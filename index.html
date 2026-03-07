@@ -16,7 +16,8 @@
 
 
   <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -40,7 +41,8 @@
           <a class="navbar-brand" href="index.html">
             <img src="images/logo_99.png" alt="Poytaxt Taxi Logo" class="logo">
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -80,7 +82,7 @@
                 <h1>
                   Shaharlararo taxi
                 </h1>
-               <h4>
+                <h4>
                   xizmatiga hush kelibsiz
                 </h4>
               </div>
@@ -131,17 +133,42 @@
           </div>
           <div class="col-lg-4 col-md-5 ">
             <div class="slider_form">
-              <h4>
-                Buyurtma qoldirish
-              </h4>
+              <h4>Buyurtma qoldirish</h4>
+
               <form action="">
+
                 <input type="text" placeholder="Ismingiz">
-                <input type="text" placeholder="Qayerdan">
-                <input type="text" placeholder="Qayerga">
+
+                <!-- Viloyatlar -->
+                <select id="fromRegion">
+                  <option value="">Qayerdan (Viloyat)</option>
+                  <option value="fargona">Farg'ona</option>
+                  <option value="toshkent">Toshkent</option>
+                </select>
+
+                <select id="fromDistrict">
+                  <option value="">Qaysi shahar yoki tumandan</option>
+                </select>
+
+
+                <select id="toRegion">
+                  <option value="">Qayerga (Viloyat)</option>
+                  <option value="fargona">Farg'ona</option>
+                  <option value="toshkent">Toshkent</option>
+                </select>
+
+                <select id="toDistrict">
+                  <option value="">Qaysi shahar yoki tumanga</option>
+                </select>
+
+                <!-- Safar vaqti -->
+                <input type="datetime-local">
+
                 <div class="btm_input">
-                  <input type="text" placeholder="Telefon raqamingiz">
+                  <input type="tel" placeholder="Telefon raqamingiz">
                   <button>Yuborish</button>
                 </div>
+
               </form>
             </div>
           </div>
@@ -165,7 +192,8 @@
             </h2>
             <p>
               2019 yildan beri 250 000+ xavfsiz safar.<br>
-              Poytaxt Taxi shaharlararo tashuv sohasida barqaror va ishonchli xizmat ko‘rsatib kelmoqda. Minglab doimiy mijozlar bizni tanlaydi, chunki biz uchun xavfsizlik, intizom va qulaylik ustuvor.
+              Poytaxt Taxi shaharlararo tashuv sohasida barqaror va ishonchli xizmat ko‘rsatib kelmoqda. Minglab doimiy
+              mijozlar bizni tanlaydi, chunki biz uchun xavfsizlik, intizom va qulaylik ustuvor.
               Har safar — mas’uliyat bilan.
             </p>
             <a href="">
@@ -271,17 +299,17 @@
           </div>
           <div class="detail-box">
             <h6>
-               Poytaxt Taxi’da aksiya 
+              Poytaxt Taxi’da aksiya
             </h6>
             <p>
               Har hafta aniqlaymiz:<br>
-• Eng faol yo‘lovchi<br>
-• Eng faol haydovchi<br>
-<br>
-Mezon: hafta davomida eng ko‘p buyurtma.<br>
-Tanlov tizim ma’lumotlari asosida.<br>
-<br>
-🎁 G‘oliblarga sovg‘a.
+              • Eng faol yo‘lovchi<br>
+              • Eng faol haydovchi<br>
+              <br>
+              Mezon: hafta davomida eng ko‘p buyurtma.<br>
+              Tanlov tizim ma’lumotlari asosida.<br>
+              <br>
+              🎁 G‘oliblarga sovg‘a.
             </p>
           </div>
         </div>
@@ -299,7 +327,8 @@ Tanlov tizim ma’lumotlari asosida.<br>
               Eiusmod tempor incididunt
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             </p>
           </div>
         </div>
@@ -317,7 +346,8 @@ Tanlov tizim ma’lumotlari asosida.<br>
               Eiusmod tempor incididunt
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             </p>
           </div>
         </div>
@@ -351,7 +381,8 @@ Tanlov tizim ma’lumotlari asosida.<br>
                     Umarbek
                   </h3>
                   <p>
-                    Salkam 5 yildan beri shu taksi kompaniyadan foydalanaman, qulay narxlar, ishonchli va tajribali haydovchilar. Hammaga tavsiya qilaman.
+                    Salkam 5 yildan beri shu taksi kompaniyadan foydalanaman, qulay narxlar, ishonchli va tajribali
+                    haydovchilar. Hammaga tavsiya qilaman.
                   </p>
                   <img src="images/quote.png" alt="">
                 </div>
@@ -367,7 +398,8 @@ Tanlov tizim ma’lumotlari asosida.<br>
                     Zulfiya
                   </h3>
                   <p>
-                    Talabalar uchun eng yaxshi tanlov deb bilaman, mashinalar xolati, salon ozodaligi. Ushbu kompaniyani o'z tengdoshlarimga tavsiya qilaman.
+                    Talabalar uchun eng yaxshi tanlov deb bilaman, mashinalar xolati, salon ozodaligi. Ushbu kompaniyani
+                    o'z tengdoshlarimga tavsiya qilaman.
                   </p>
                   <img src="images/quote.png" alt="">
                 </div>
@@ -397,7 +429,7 @@ Tanlov tizim ma’lumotlari asosida.<br>
         <div class="col-md-5  offset-md-1">
           <div class="contact_form">
             <h4>
-              Talab va takliflaringizni qoldiring 
+              Talab va takliflaringizni qoldiring
             </h4>
             <form action="">
               <input type="text" placeholder="Ismingiz">
@@ -430,7 +462,7 @@ Tanlov tizim ma’lumotlari asosida.<br>
             <div class="text-box">
               <h5>
                 Safar buyurtma qilish endi bir necha soniya ichida.
-Ilovani App Store yoki Play Market’dan yuklab oling, ro‘yxatdan o‘ting va qulay safarni boshlang
+                Ilovani App Store yoki Play Market’dan yuklab oling, ro‘yxatdan o‘ting va qulay safarni boshlang
               </h5>
               <p>
 
@@ -438,7 +470,7 @@ Ilovani App Store yoki Play Market’dan yuklab oling, ro‘yxatdan o‘ting va 
             </div>
             <div class="text-box">
               <h5>
-               <!--Bu qanday ishlaydi--> 
+                <!--Bu qanday ishlaydi-->
               </h5>
               <p>
                 <!-- Mobil ilovani App Store yoki Play Marketdan tortib oling va telefon raqamingiz orqali ro'yxatdan o'ting.  -->
@@ -501,7 +533,7 @@ Ilovani App Store yoki Play Market’dan yuklab oling, ro‘yxatdan o‘ting va 
             </h5>
             <p>
               Biz mijozlar xavfsizligini birinchi o‘ringa qo‘yamiz.
-Toza avtomobillar, nazorat ostidagi buyurtmalar va shaffof xizmat — har safarda xotirjamlik kafolati.
+              Toza avtomobillar, nazorat ostidagi buyurtmalar va shaffof xizmat — har safarda xotirjamlik kafolati.
             </p>
           </div>
         </div>
@@ -516,7 +548,7 @@ Toza avtomobillar, nazorat ostidagi buyurtmalar va shaffof xizmat — har safard
             </h5>
             <p>
               Siz istalgan vaqtda biz bilan bog‘lanishingiz mumkin.
-Operatorlarimiz 24/7 xizmat ko‘rsatadi va har qanday savol yoki muammoni tezkor hal qiladi.
+              Operatorlarimiz 24/7 xizmat ko‘rsatadi va har qanday savol yoki muammoni tezkor hal qiladi.
             </p>
           </div>
         </div>
@@ -594,7 +626,7 @@ Operatorlarimiz 24/7 xizmat ko‘rsatadi va har qanday savol yoki muammoni tezko
   <section class="container-fluid footer_section">
     <div class="container">
       <p>
-        &copy;  2026 Barcha huquqlar himoyalangan - 
+        &copy; 2026 Barcha huquqlar himoyalangan -
         <a href="https://html.design/">Nest Data Group</a>
       </p>
     </div>
@@ -629,7 +661,64 @@ Operatorlarimiz 24/7 xizmat ko‘rsatadi va har qanday savol yoki muammoni tezko
     });
   </script>
   <!-- end owl carousel script -->
+  <script>
 
+    const districts = {
+      fargona: [
+        "Farg'ona shahri",
+        "Qo'qon",
+        "Marg'ilon",
+        "Quva",
+        "Rishton",
+        "Oltiariq",
+        "Beshariq"
+      ],
+
+      toshkent: [
+        "Yunusobod",
+        "Chilonzor",
+        "Yakkasaroy",
+        "Mirzo Ulug'bek",
+        "Sergeli",
+        "Bektemir"
+      ]
+    }
+
+
+    function updateDistricts(regionSelectId, districtSelectId) {
+
+      const region = document.getElementById(regionSelectId).value
+      const districtSelect = document.getElementById(districtSelectId)
+
+      districtSelect.innerHTML = '<option value="">Tuman / Shahar tanlang</option>'
+
+      if (districts[region]) {
+
+        districts[region].forEach(function (d) {
+
+          const option = document.createElement("option")
+          option.value = d
+          option.textContent = d
+
+          districtSelect.appendChild(option)
+
+        })
+
+      }
+
+    }
+
+
+    document.getElementById("fromRegion").addEventListener("change", function () {
+      updateDistricts("fromRegion", "fromDistrict")
+    })
+
+
+    document.getElementById("toRegion").addEventListener("change", function () {
+      updateDistricts("toRegion", "toDistrict")
+    });
+
+  </script>
 </body>
 
 </html>
