@@ -682,13 +682,22 @@ a:focus {
 	margin-bottom: 15px;
 	padding-left: 10px;
 }
-.time-input{
+/* Bu kod date time inputni sozlaydi*/
+.time-input{  
   width:100%;
   padding:10px;
   font-size:16px;
   border-radius:8px;
   border:1px solid #ccc;
   box-sizing:border-box;
+}
+@media (max-width:600px){
+
+.time-input{
+  font-size:14px;
+  padding:8px;
+}
+
 }
 .contact_section .contact_form form input.message_input {
 	height: 75px;
