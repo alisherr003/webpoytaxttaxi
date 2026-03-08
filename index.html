@@ -162,7 +162,8 @@
 
                 <!-- Safar vaqti -->
                 <div class="time-wrapper">
-                  <input type="datetime-local" class="time-input">
+                  <span class="time-placeholder">Sana va vaqt</span>
+                  <input type="datetime-local" class="time-input" id="time">
                 </div>
 
                 <div class="btm_input">
@@ -802,6 +803,20 @@
 
   });
 
+  </script>
+  <script>
+  const timeInput = document.getElementById("time");
+  const placeholder = document.querySelector(".time-placeholder");
+
+  timeInput.addEventListener("focus", function(){
+    placeholder.style.display = "none";
+  });
+
+  timeInput.addEventListener("blur", function(){
+    if(!timeInput.value){
+      placeholder.style.display = "block";
+    }
+  });
   </script>
 </body>
 
