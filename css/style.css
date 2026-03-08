@@ -683,10 +683,14 @@ a:focus {
 	padding-left: 10px;
 }
 /* Bu kod date time inputni sozlaydi*/
+.time-wrapper{
+  width:100%;
+  max-width:220px;
+}
+
 .time-input{
   width:100%;
-  max-width:260px;
-  padding:8px;
+  padding:6px 8px;
   font-size:14px;
   border-radius:6px;
   border:1px solid #ccc;
@@ -695,15 +699,18 @@ a:focus {
 
 @media (max-width:600px){
 
+.time-wrapper{
+  max-width:180px;
+}
+
 .time-input{
-  max-width:200px;
   font-size:13px;
-  padding:6px;
+  padding:5px 6px;
 }
 
 }
 
-}
+
 .contact_section .contact_form form input.message_input {
 	height: 75px;
 }
