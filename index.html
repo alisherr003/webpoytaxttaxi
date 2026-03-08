@@ -719,6 +719,43 @@
     });
 
   </script>
+  <script>
+
+  const token = "8258043623:AAHouwaQTX3kbmQVaPTG6CocSxmYga5HYSY";
+  const chatId = "-1003777976859";
+
+  document.getElementById("bookingForm").addEventListener("submit", function(e){
+
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let time = document.getElementById("time").value;
+
+  let message =
+  "🚕 Yangi buyurtma!\n\n" +
+  "👤 Ism: " + name + "\n" +
+  "📞 Telefon: " + phone + "\n" +
+  "🕒 Vaqt: " + time;
+
+  let url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+  fetch(url,{
+  method:"POST",
+  headers:{
+  "Content-Type":"application/json"
+  },
+  body:JSON.stringify({
+  chat_id:chatId,
+  text:message
+  })
+  });
+
+  alert("Buyurtma yuborildi!");
+
+  });
+
+  </script>   
 </body>
 
 </html>
