@@ -427,14 +427,18 @@
       <div class="row">
         <div class="col-md-5  offset-md-1">
           <div class="contact_form">
-            <h4>
-              Talab va takliflaringizni qoldiring
-            </h4>
-            <form action="">
-              <input type="text" placeholder="Ismingiz">
-              <input type="text" placeholder="Telefon raqamingiz">
-              <input type="text" placeholder="Habar qoldirish" class="message_input">
-              <button>Yuborish</button>
+            <h4>Talab va takliflaringizni qoldiring</h4>
+
+            <form id="feedbackForm">
+
+              <input type="text" id="f_name" placeholder="Ismingiz">
+
+              <input type="text" id="f_phone" placeholder="Telefon raqamingiz">
+
+              <input type="text" id="f_message" placeholder="Habar qoldirish" class="message_input">
+
+              <button type="submit">Yuborish</button>
+
             </form>
           </div>
         </div>
@@ -756,6 +760,47 @@
   });
 
   </script>   
+
+  <script>
+
+  const token2 = "8258043623:AAHouwaQTX3kbmQVaPTG6CocSxmYga5HYSY";
+  const chatId2 = "-1003777976859";
+
+  document.getElementById("feedbackForm").addEventListener("submit", function(e){
+
+  e.preventDefault();
+
+  let name = document.getElementById("f_name").value;
+  let phone = document.getElementById("f_phone").value;
+  let messageText = document.getElementById("f_message").value;
+
+  let message =
+  "💬 Yangi taklif yoki talab\n\n" +
+  "👤 Ism: " + name + "\n" +
+  "📞 Telefon: " + phone + "\n" +
+  "✉️ Habar: " + messageText;
+
+  let url = `https://api.telegram.org/bot${token2}/sendMessage`;
+
+  fetch(url,{
+  method:"POST",
+  headers:{
+  "Content-Type":"application/json"
+  },
+  body:JSON.stringify({
+  chat_id:chatId2,
+  text:message
+  })
+  });
+
+  alert("Xabaringiz yuborildi!");
+
+  // formani tozalash
+  document.getElementById("feedbackForm").reset();
+
+  });
+
+  </script>
 </body>
 
 </html>
