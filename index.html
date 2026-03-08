@@ -135,9 +135,9 @@
             <div class="slider_form">
               <h4>Buyurtma qoldirish</h4>
 
-              <form action="">
+              <form id="bookingForm">
 
-                <input type="text" placeholder="Ismingiz">
+                <input type="text" id="name" placeholder="Ismingiz">
 
                 <!-- Viloyatlar -->
                 <select id="fromRegion">
@@ -150,7 +150,6 @@
                   <option value="">Qaysi shahar yoki tumandan</option>
                 </select>
 
-
                 <select id="toRegion">
                   <option value="">Qayerga (Viloyat)</option>
                   <option value="fargona">Farg'ona</option>
@@ -162,11 +161,11 @@
                 </select>
 
                 <!-- Safar vaqti -->
-                <input type="datetime-local">
+                <input type="datetime-local" id="time">
 
                 <div class="btm_input">
-                  <input type="tel" placeholder="Telefon raqamingiz">
-                  <button>Yuborish</button>
+                  <input type="tel" id="phone" placeholder="Telefon raqamingiz">
+                  <button type="submit">Yuborish</button>
                 </div>
 
               </form>
