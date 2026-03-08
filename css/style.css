@@ -683,19 +683,24 @@ a:focus {
 	padding-left: 10px;
 }
 /* Bu kod date time inputni sozlaydi*/
-.time-input{  
+.time-input{
   width:100%;
-  padding:10px;
-  font-size:16px;
-  border-radius:8px;
+  max-width:260px;
+  padding:8px;
+  font-size:14px;
+  border-radius:6px;
   border:1px solid #ccc;
   box-sizing:border-box;
 }
+
 @media (max-width:600px){
 
 .time-input{
-  font-size:14px;
-  padding:8px;
+  max-width:200px;
+  font-size:13px;
+  padding:6px;
+}
+
 }
 
 }
